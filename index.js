@@ -4,6 +4,10 @@ const { find } = require('geo-tz');
 var moment = require('moment-timezone');
 const port = 3007
 
+app.get('/', (req, res) => {
+    res.send('HOI');
+})
+
 /**
  * @lng - долгота (37.6173)
  * @lat - широта (55.755826)
