@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const { find } = require('geo-tz');
 var moment = require('moment-timezone');
 const port = 3007
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send('HOI');
