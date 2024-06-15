@@ -27,7 +27,8 @@ app.get('/utc', (req, res) => {
 
     const data = {
       gmtOffset: dt.utcOffset()*60,
-      dst: dt.isDST() ? 1 : 0
+      dst: dt.isDST() ? 1 : 0,
+      zoneName: tzName
     }
     res.json(data);
 })
